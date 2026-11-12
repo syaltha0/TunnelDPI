@@ -1,0 +1,133 @@
+name: Build TunnelDPI
+
+on:
+  push:
+    branches: ['**']
+    tags: ['v*']
+    paths:
+      - 'app/**'
+      - 'engine/**'
+      - '.github/workflows/build.yml'
+  pull_request:
+    paths:
+      - 'app/**'
+      - 'engine/**'
+      - '.github/workflows/build.yml'
+  workflow_dispatch:
+
+env:
+  WINDIVERT_URL: https://reqrypt.org/download/WinDivert-2.2.0-D.zip
+  WINDIVERT_NAME: WinDivert-2.2.0-D.zip
+  WINDIVERT_BASENAME: WinDivert-2.2.0-D
+  WINDIVERT_SHA256: 1d461cfdfa7ba88ebcfbb3603b71b703e9f72aba8aeff99a75ce293e6f89d2ba
+  ZAPRET_VERSION: v72.13
+  ZAPRET_SHA256: c493e33a0dc4eba23a8686efdaba55f59755ad6ade3564aebd9d13f4c65e2e0c
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install MinGW-w64
+        run: >
+          sudo rm -f /var/lib/man-db/auto-update &&
+          sudo DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends gcc-mingw-w64 binutils-mingw-w64
+
+      - name: Download WinDivert from cache
+        id: windivert-cache
+        uses: actions/cache@v4
+        with:
+          path: ${{ env.WINDIVERT_NAME }}
+          key: ${{ env.WINDIVERT_SHA256 }}
+
+      - name: Download WinDivert from the website
+        if: steps.windivert-cache.outputs.cache-hit != 'true'
+        run: >
+          wget ${{ env.WINDIVERT_URL }} &&
+          (echo ${{ env.WINDIVERT_SHA256 }} ${{ env.WINDIVERT_NAME }} | sha256sum -c)
+
+      - name: Download zapret
+        run: |
+          wget -q https://github.com/bol-van/zapret/releases/download/${ZAPRET_VERSION}/zapret-${ZAPRET_VERSION}.zip
+          echo "${ZAPRET_SHA256}  zapret-${ZAPRET_VERSION}.zip" | sha256sum -c
+          unzip -q zapret-${ZAPRET_VERSION}.zip
+
+      - name: Unpack WinDivert
+        run: unzip -q ${{ env.WINDIVERT_NAME }}
+
+      - name: Compile engine (x86_64)
+        run: >
+          cd engine && make clean &&
+          make CPREFIX=x86_64-w64-mingw32- BIT64=1 WINDIVERTHEADERS=../${{ env.WINDIVERT_BASENAME }}/include
+          WINDIVERTLIBS=../${{ env.WINDIVERT_BASENAME }}/x64 -j4
+
+      - name: Compile TunnelDPI
+        run: cd app && make clean && make CPREFIX=x86_64-w64-mingw32- -j4
+
+      - name: Assemble package
+        run: |
+          P=app/pkg
+          Z=zapret-${ZAPRET_VERSION}
+          mkdir -p $P/engine $P/zapret/fake $P/lists $P/licenses
+          cp app/TunnelDPI.exe $P/
+          cp engine/tunneldpi-engine.exe ${{ env.WINDIVERT_BASENAME }}/x64/WinDivert.dll ${{ env.WINDIVERT_BASENAME }}/x64/WinDivert64.sys $P/engine/
+          cp $Z/binaries/windows-x86_64/{winws.exe,cygwin1.dll,WinDivert.dll,WinDivert64.sys} $P/zapret/
+          cp $Z/files/fake/*.bin $P/zapret/fake/
+          cp app/lists/*.txt $P/lists/
+          cp LICENSE $P/licenses/LICENSE.txt
+          cp NOTICE $P/licenses/NOTICE.txt
+          cp $Z/docs/LICENSE.txt $P/licenses/LICENSE-zapret.txt
+          cp ${{ env.WINDIVERT_BASENAME }}/LICENSE $P/licenses/LICENSE-windivert.txt || true
+
+      - name: Build installer
+        run: |
+          python3 app/setup/pack.py app/pkg app/setup/payload.bin
+          cd app && make CPREFIX=x86_64-w64-mingw32- setup
+          VER=$(sed -n 's/^#define VER_STR *"\(.*\)"/\1/p' src/version.h)
+          echo "VER=$VER" >> $GITHUB_ENV
+          mv TunnelDPI-Setup.exe TunnelDPI-Setup-$VER.exe
+          (cd pkg && zip -qr ../TunnelDPI-$VER-portable.zip .)
+
+      - name: Upload artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: TunnelDPI-${{ env.VER }}
+          path: |
+            app/TunnelDPI-Setup-${{ env.VER }}.exe
+            app/TunnelDPI-${{ env.VER }}-portable.zip
+
+      # Uygulama yalnızca imzası tutan sürümleri kurar. Gizli anahtar depoda değil,
+      # Settings > Secrets > Actions > RELEASE_SIGNING_KEY içinde (PEM metni).
+      - name: Sign checksums
+        if: startsWith(github.ref, 'refs/tags/v')
+        env:
+          RELEASE_SIGNING_KEY: ${{ secrets.RELEASE_SIGNING_KEY }}
+        run: |
+          cd app
+          if [ -z "$RELEASE_SIGNING_KEY" ]; then
+            echo "::error::RELEASE_SIGNING_KEY tanımlı değil; imzasız sürüm yayınlanmaz."
+            exit 1
+          fi
+          sha256sum TunnelDPI-Setup-$VER.exe TunnelDPI-$VER-portable.zip > SHA256SUMS.txt
+          umask 077
+          echo "$RELEASE_SIGNING_KEY" > signing.pem
+          openssl dgst -sha256 -sign signing.pem -out SHA256SUMS.txt.sig SHA256SUMS.txt
+          openssl ec -in signing.pem -pubout -out pub.pem 2>/dev/null
+          rm -f signing.pem
+          openssl dgst -sha256 -verify pub.pem -signature SHA256SUMS.txt.sig SHA256SUMS.txt
+          rm -f pub.pem
+
+      - name: Publish release
+        if: startsWith(github.ref, 'refs/tags/v')
+        uses: softprops/action-gh-release@v2
+        with:
+          files: |
+            app/TunnelDPI-Setup-${{ env.VER }}.exe
+            app/TunnelDPI-${{ env.VER }}-portable.zip
+            app/SHA256SUMS.txt
+            app/SHA256SUMS.txt.sig
+          generate_release_notes: true

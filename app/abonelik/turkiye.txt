@@ -1,0 +1,23 @@
+# TunnelDPI - Türkiye'de erişimi engellenen siteler
+# Her satıra bir alan adı; alt adresler de kapsanır. Uygulama bu dosyayı günde bir indirir.
+# Discord (Ekim 2024)
+discord.com
+discord.gg
+discord.media
+discord.co
+discord.gift
+discord.new
+discord.dev
+discordapp.com
+discordapp.net
+discordcdn.com
+discordstatus.com
+dis.gd
+# Roblox (Ağustos 2024)
+roblox.com
+rbxcdn.com
+rbxinfra.net
+rbxtrk.com
+arkoselabs.com
+# Wattpad (Temmuz 2024)
+wattpad.com

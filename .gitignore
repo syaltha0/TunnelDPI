@@ -1,0 +1,62 @@
+# Derleme çıktıları
+*.o
+*.exe
+*.dll
+*.sys
+*.bmp
+app/pkg/
+app/dist/
+app/setup/payload.bin
+app/TunnelDPI-*.zip
+app/SHA256SUMS.txt*
+
+# Uygulama kaynak klasöründen çalışınca yazdıkları
+app/tunneldpi.ini
+app/tunneldpi.log
+app/tunneldpi.log.old
+app/dns-restore.ini
+app/apps.txt
+app/oyun-modu.txt
+app/lists/subscriptions.ini
+app/lists/learned*.txt
+app/lists/otomatik*.txt
+app/lists/*.candidates.txt
+
+# Geliştirme testlerinin çıktıları
+app/selftest.txt
+app/uitest.txt
+app/qualitytest.txt
+app/.test-build/
+app/tests/out/
+
+# Sırlar (imza anahtarı depoda olmaz; yalnız .sig dosyaları girer)
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Yapay zekâ ajanlarının yerel dosyaları: bu depo herkese açık, ajan notları yalnız bu bilgisayarda
+AGENTS.md
+CLAUDE.md
+NOTES.md
+CONST.md
+BACKLOG.md
+BACKLOG_LOG.md
+reports/
+.githooks/
+.env.example
+.claude/
+.codex/
+.opencode/
+.cursor/
+.agentation/
+.t3/
+
+# İşletim sistemi ve editör
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+*.swp

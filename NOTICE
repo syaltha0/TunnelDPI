@@ -1,0 +1,26 @@
+TunnelDPI
+Copyright 2026 TunnelDPI contributors
+
+Licensed under the Apache License, Version 2.0 (see LICENSE).
+
+This product includes software developed by others:
+
+GoodbyeDPI (engine/) - Apache License 2.0
+  Copyright ValdikSS - https://github.com/ValdikSS/GoodbyeDPI
+  Turkey edition by cagritaskn - https://github.com/cagritaskn/GoodbyeDPI-Turkey
+  Modified for TunnelDPI: multi-position split, sequence overlap, MD5 signature
+  fakes, learned block lists, UDP fakes, per-process filtering, ad blocking.
+  The full commit history and contributor list of the original code is kept
+  in those two repositories; this repository starts from a single snapshot.
+
+zapret / winws (shipped as binaries in zapret/) - MIT License
+  Copyright bol-van - https://github.com/bol-van/zapret
+
+WinDivert (shipped as binaries) - LGPL v3 / GPL v2
+  Copyright basil00 - https://github.com/basil00/WinDivert
+
+Cygwin runtime (zapret/cygwin1.dll) - LGPL v3
+  https://cygwin.com
+
+Ad blocking lists are downloaded at runtime from their publishers
+(HaGeZi, AdGuard, StevenBlack) under their own licenses.

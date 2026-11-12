@@ -1,0 +1,613 @@
+Durum	Status
+%s\nDenenen: %d/%d · Çalışan: %d	%s\nTested: %d/%d · Working: %d
+TunnelDPI %s · Bu sürümde	TunnelDPI %s · What's new
+• Kurulum sihirbazı ve ilk kullanım rehberi yenilendi.\n\n• Hatalara çözüm düğmeleri, profil aramasına kalıcı sonuç özeti eklendi.\n\n• Destek raporu, klavye erişimi ve ekran ölçeği iyileştirildi.	• Updated setup wizard and getting started guide.\n\n• Added recovery actions for errors and a persistent profile search summary.\n\n• Improved support reports, keyboard access and display scaling.
+Yeniden dene; sorun sürerse günlükteki ayrıntılara bak	Try again; if the problem persists, check the log for details
+Yeniden dene	Retry
+Günlüğü aç	Open log
+Telefonla paylaşım açılamadı	Phone sharing could not start
+Paylaşım ayarlarını kontrol edip yeniden deneyebilirsin	Check sharing settings and try again
+Paylaşım ayarları	Sharing settings
+%d/%d tamamlandı · %d kaldı · %d çalıştı	%d/%d completed · %d remaining · %d working
+%s · %s	%s · %s
+Bağlantı deneniyor	Testing connection
+Yöntem hazırlanıyor	Preparing method
+Paylaşım açılamadı; 8881 portunu başka bir uygulama kullanıyor olabilir	Sharing could not start; another app may be using port 8881
+Paylaşımı yeniden başlat	Restart sharing
+Bu sürümde neler var?	What's new in this version?
+Destek raporu	Support report
+Kişisel metinler olmadan teknik durumları önizle, kopyala veya kaydet	Preview, copy or save technical status without personal text
+Rapor hazırla	Prepare report
+Rapor panoya kopyalandı.	Report copied to clipboard.
+Rapor kaydedildi.	Report saved.
+Rapor aktarılamadı. Yeniden dene.	Could not export the report. Try again.
+Dosyaya kaydet	Save to file
+Destek raporu önizlemesi	Support report preview
+Yalnız teknik durumlar ve hata sayıları var. Hiçbir yere kendiliğinden gönderilmez.	Contains technical status and error counts only. Nothing is sent automatically.
+TunnelDPI'a hoş geldin	Welcome to TunnelDPI
+Korumayı kontrol et	Check protection
+Açılmayan bir siteyi dene	Try a blocked site
+Saatin yanında hazır	Ready next to the clock
+Bu kısa rehberle başlayabilirsin.\n\nTunnelDPI, bazı erişim engellerini aşmak için bağlantı yöntemini değiştirir. VPN değildir; IP adresini gizlemez.\n\nRehberi daha sonra Genel sayfasından yeniden açabilirsin.	Get started with this short guide.\n\nTunnelDPI changes the connection method to help get around some access blocks. It is not a VPN and does not hide your IP address.\n\nYou can reopen this guide later from General.
+Durum sayfasındaki büyük güç düğmesi korumayı açar ve kapatır. Durumda Açık yazdığında koruma çalışıyordur.\n\nProfil, bağlantıda kullanılan yöntemdir. Başlangıç ayarıyla başlayabilirsin; her ayarı değiştirmen gerekmez.	The large power button on Status turns protection on and off. When the status says On, protection is running.\n\nA profile is the method used for your connection. Start with the default; you do not need to change every setting.
+Durum sayfasında Site adresi kutusuna sende açılmayan bir site yaz ve Açılmasını sağla düğmesine bas.\n\nHâlâ açılmıyorsa Genel sayfasında Test sitesi olarak bu adresi seç. Ardından Durum sayfasında En uygun profili bul → Hızlı ara seçeneğini kullan.\n\nArama sürerken bağlantın kısa süreliğine kesilebilir.	On Status, enter a site you cannot open in Site address and click Make it open.\n\nIf it still does not open, set this address as the Test site in General. Then use Find the best profile → Quick search on Status.\n\nYour connection may briefly drop during the search.
+Pencereyi kapatsan da TunnelDPI saatin yanında çalışır. Simge gizliyse saatin yanındaki oka bak.\n\nSimgeye tıkla: ayarlar. Sağ tıkla: hızlı menü. Tamamen çıkmak için Genel → TunnelDPI'ı kapat seçeneğini kullan.\n\nWindows açılışında başlatma seçeneğini Genel sayfasından değiştirebilirsin.	TunnelDPI keeps running next to the clock when you close the window. If the icon is hidden, check the arrow next to the clock.\n\nClick the icon for settings; right-click for the quick menu. To exit completely, use General → Quit TunnelDPI.\n\nYou can change Start with Windows from General.
+Başlangıç rehberi	Getting started
+Geri	Back
+Durum sayfasını aç	Open Status
+İleri	Next
+Koruma, site denemesi ve saatin yanındaki simge için kısa bir tur	A short tour of protection, trying a site and the tray icon
+Rehberi aç	Open guide
+Bu ağ giriş istiyor	This network requires sign-in
+Tarayıcıda açılan sayfadan ağa giriş yap; internet gelince koruma kendiliğinden açılır.	Sign in to the network in your browser; protection resumes when internet access is available.
+Bu ağda seçili profil çalışmıyor. \"En uygun profili bul\" ile başka bir profil dene.	The selected profile does not work on this network. Try another with \"Find the best profile\".
+Ağa giriş yapıldı; koruma yeniden açıldı.	Signed in to the network; protection resumed.
+Beklemede	Waiting
+Bu ağ giriş istiyor; giriş yapınca koruma kendiliğinden açılır.	This network requires sign-in; protection resumes after you sign in.
+İnternet sağlayıcın: %s	Your internet provider: %s
+Bu sağlayıcıda önerilen: %s	Recommended for this provider: %s
+Bu sağlayıcı için öneri yok; \"En uygun profili bul\" çalışanı bulur	No recommendation for this provider; use \"Find the best profile\" to find one that works
+Önerileni kullan	Use recommended
+Sağlayıcın, internet bağlantının genel adresinden RIPE NCC kayıtlarına bakılarak bulunur. Hangi sağlayıcıda hangi profilin çalıştığı, TunnelDPI deposundaki imzalı hazır ayar dosyasından gelir ve günde bir güncellenir. VPN açıksa VPN'in sağlayıcısı görünür.	Your provider is identified from your public IP address using RIPE NCC records. Profile recommendations come from the signed presets file in the TunnelDPI repository, updated daily. If a VPN is active, its provider appears instead.
+Türkiye listesini ekle	Add Turkey list
+Boş liste	Empty list
+Telefonla paylaşım	Share with a phone
+Telefonun Wi-Fi ayarında vekil: %s, port %d	Phone Wi-Fi proxy settings: %s, port %d
+Windows'ta Mobil erişim noktasını açınca başlar	Starts when you turn on Mobile hotspot in Windows
+Bilgisayarın internetini paylaştığın cihazlarda da engeller aşılır	Help bypass blocks on devices sharing this computer's internet connection
+Erişim noktasındaki cihazlara uygula	Apply to devices on the hotspot
+Windows Ayarlar → Ağ ve İnternet → Mobil erişim noktası'nı aç ve telefonu bu ağa bağla. Telefonda Wi-Fi ağının ayrıntılarından Vekil sunucu (Proxy) → Elle seç; sunucuya buradaki adresi, porta 8881 yaz.\n\nTarayıcı ve çoğu uygulama bu yolla açılır. Sesli görüşme gibi UDP trafiği vekilden geçmez. Vekil yalnızca erişim noktası ağından gelen bağlantıları kabul eder.	Turn on Windows Settings → Network & internet → Mobile hotspot and connect your phone. In the phone's Wi-Fi details, select Proxy → Manual; enter the address shown here and port 8881.\n\nBrowsers and apps that support the proxy can use it. UDP traffic, such as voice calls, does not pass through it. The proxy only accepts connections from the hotspot network.
+Profiller	Profiles
+DNS	DNS
+Site listeleri	Site lists
+Uygulamalar	Apps
+Genel	General
+Günlük	Log
+Sahte yönlendirmeleri engelle	Block fake redirects
+-p · İnternet sağlayıcının araya soktuğu sahte yönlendirme sayfalarını düşürür	-p · drops fake redirect pages injected by your ISP
+HTTP/3'ü kapat	Turn off HTTP/3
+-q · Tarayıcıları engelin aşılabildiği normal HTTPS bağlantısına yönlendirir	-q · makes browsers use regular HTTPS, where blocks can be bypassed
+Host başlığını değiştir	Change Host header
+-r · Host → hoSt (yalnızca HTTP)	-r · Host → hoSt (HTTP only)
+Host boşluğunu kaldır	Remove Host space
+-s · Host başlığındaki boşluğu siler (HTTP)	-s · removes the space in the Host header (HTTP)
+Ek boşluk ekle	Add extra space
+-a · HTTP isteğine fazladan boşluk ekler; bazı siteleri bozabilir	-a · adds an extra space to HTTP requests; may break some sites
+Host harflerini karıştır	Mix Host case
+-m · test.com → tEsT.cOm (HTTP)	-m · test.com → tEsT.cOm (HTTP)
+Tüm portlarda HTTP ara	Look for HTTP on all ports
+-w · Yalnızca 80. port yerine her portta HTTP trafiği işlenir	-w · processes HTTP on every port, not just port 80
+İlk ACK'i bekleme	Don't wait for first ACK
+-n · Keep-alive parçalamada (-k) ilk segment onayını beklemez	-n · with keep-alive fragmentation (-k), don't wait for the first segment ACK
+Sahte paket: hatalı checksum	Fake packet: wrong checksum
+--wrong-chksum · Sahte paketler bozuk sağlama toplamıyla gönderilir	--wrong-chksum · fake packets are sent with an invalid checksum
+Sahte paket: hatalı SEQ/ACK	Fake packet: wrong SEQ/ACK
+--wrong-seq · Sahte paketler geçmiş sıra numarasıyla gönderilir	--wrong-seq · fake packets are sent with a past sequence number
+Doğal parçalama	Native fragmentation
+--native-frag · Paketler küçültülmek yerine bölünerek gönderilir	--native-frag · splits packets instead of shrinking the window
+Ters sıralı parçalama	Reverse fragmentation
+--reverse-frag · Parçalar ters sırada gönderilir	--reverse-frag · sends fragments in reverse order
+SNI olmasa da uygula	Apply without SNI too
+--allow-no-sni · Listeli modda SNI'siz bağlantılara da uygular	--allow-no-sni · in list mode, also applies to connections without SNI
+SNI'den böl	Split at SNI
+--frag-by-sni · HTTPS paketi tam SNI konumundan bölünür	--frag-by-sni · splits the HTTPS packet exactly at the SNI
+Ayrıntılı DNS günlüğü	Verbose DNS log
+--dns-verb · DNS yönlendirmesi için ayrıntılı çıktı	--dns-verb · detailed output for DNS redirection
+HTTP parça boyutu	HTTP fragment size
+-f · Boş bırakılırsa kullanılmaz	-f · not used when empty
+Keep-alive parça boyutu	Keep-alive fragment size
+-k · HTTP kalıcı bağlantı parçalaması	-k · HTTP persistent connection fragmentation
+HTTPS parça boyutu	HTTPS fragment size
+-e · TLS ClientHello parçalama boyutu	-e · TLS ClientHello fragment size
+Sahte paket TTL'i	Fake packet TTL
+--set-ttl · Sahte paketler sağlayıcıya ulaşsın ama siteye ulaşmasın diye; Türkiye'de genelde 3-5	--set-ttl · so fake packets reach your ISP but not the site; usually 3-5 in Turkey
+En düşük TTL	Minimum TTL
+--min-ttl · Bu mesafenin altında sahte paket gönderilmez	--min-ttl · no fake packets below this distance
+Rastgele sahte paket sayısı	Random fake packet count
+--fake-gen · Rastgele SNI'li sahte paket üretir	--fake-gen · generates fake packets with random SNI
+Sahte paket tekrarı	Fake packet repeats
+--fake-resend · Her sahte paket kaç kez gönderilsin	--fake-resend · how many times each fake packet is sent
+IP ID'leri	IP IDs
+--ip-id · Virgülle ayrılmış; bu ID'li paketler de işlenir	--ip-id · comma separated; packets with these IDs are processed too
+Otomatik TTL	Auto TTL
+--auto-ttl · Sahte paket TTL'ini sunucu mesafesine göre seçer	--auto-ttl · picks the fake packet TTL from the server distance
+En büyük payload	Maximum payload
+--max-payload · Bu boyuttan büyük paketlere dokunulmaz	--max-payload · larger packets are left untouched
+Ek portlar	Extra ports
+--port · Virgülle ayrılmış, ör. 8080, 8443	--port · comma separated, e.g. 8080, 8443
+Sahte SNI	Fake SNI
+--fake-with-sni · Virgülle ayrılmış alan adları	--fake-with-sni · comma separated domains
+Sahte paket (hex)	Fake packet (hex)
+--fake-from-hex · Sahte paket içeriği	--fake-from-hex · fake packet content
+Liste dosyaları (elle)	List files (manual)
+--blacklist · ';' ile ayrılmış, uygulama klasörüne göre dosya yolları	--blacklist · ';' separated file paths, relative to the app folder
+Ek komut seçenekleri	Extra command options
+Motorun komutuna olduğu gibi eklenir	Added to the engine command as is
+Yok	None
+Yöntem 1 · En uyumlu	Method 1 · Most compatible
+Yöntem 5 · Türkiye için önerilen	Method 5 · Recommended for Turkey
+Yöntem 9 · En kapsamlı	Method 9 · Most thorough
+Yöntem 2	Method 2
+Yöntem 3	Method 3
+Yöntem 4	Method 4
+Yöntem 6	Method 6
+Yöntem 7	Method 7
+Yöntem 8	Method 8
+Yok (yalnızca aşağıdaki ayarlar)	None (only the settings below)
+-1  -p -r -s -f 2 -k 2 -n -e 2 (en uyumlu)	-1  -p -r -s -f 2 -k 2 -n -e 2 (most compatible)
+-5  parçalama + fake + auto-ttl (Türkiye)	-5  fragmentation + fake + auto-ttl (Turkey)
+-6  parçalama + fake + wrong-seq	-6  fragmentation + fake + wrong-seq
+-7  parçalama + fake + wrong-chksum	-7  fragmentation + fake + wrong-chksum
+Windows varsayılanı	Windows default
+Windows ayarı	Windows setting
+Uygulama üzerinden	Through the app
+%lu sn	%lu s
+%lu dk	%lu min
+%lu sa %lu dk	%lu h %lu min
+Hızlı ayarlar	Quick settings
+Profil	Profile
+Engelleri aşmak için kullanılan yöntem	The method used to get around blocks
+İnternet sağlayıcının DNS'i kullanılıyor	Using your ISP's DNS
+Bağlantı testi	Connection test
+Deneniyor %d/%d: %s	Trying %d/%d: %s
+En uygun profili bul	Find the best profile
+Başlat	Start
+Sorunu bul	Find the problem
+Test sitesinin neden açılmadığını bulur: DNS mi, bağlantı engeli mi	Finds out why the test site won't open: DNS or a connection block
+İnceleniyor	Checking
+İncele	Check
+Windows açılışında başlat	Start with Windows
+Bilgisayarı açınca kendiliğinden, onay sormadan başlar	Starts by itself when you sign in, without asking
+Site         %s\nSistem DNS   %s\nDoH          %s\nHTTPS        %s	Site         %s\nSystem DNS   %s\nDoH          %s\nHTTPS        %s
+çözülemedi	not resolved
+ulaşılamadı	unreachable
+bağlandı	connected
+bağlantı kurulamadı	could not connect
+%d profil · kullanılan: %s	%d profiles · in use: %s
+Düzenlenen profil	Profile being edited
+Şu anda kullanılıyor	Currently in use
+Kullanılmıyor	Not in use
+Kullanılıyor	In use
+Bunu kullan	Use this
+Kopyasını oluştur	Duplicate
+Yeni profil	New profile
+Yöntem	Method
+Hazır ayar	Preset
+Temel atlatma ayarı; aşağıdaki seçenekler bunun üzerine eklenir	The base setting; the options below are added on top
+Koruma yalnızca seçili listelerdeki sitelere uygulanır.	Protection applies only to sites in the selected lists.
+Liste seçilmedi; koruma tüm sitelere uygulanır.	No list selected; protection applies to all sites.
+Henüz liste yok	No lists yet
+Bir liste oluştur, sonra buradan bu profile ekle	Create a list, then add it to this profile here
+Liste oluştur	Create list
+%d site	%d sites
+Gelişmiş	Advanced
+Tüm motor seçenekleri	All engine options
+Uzmanlar için: parçalama, sahte paket ve diğer ayarlar	For experts: fragmentation, fake packets and more
+%s değeri	%s value
+Boş bırakılırsa varsayılan	Default when empty
+Ağlar	Networks
+Ev, iş ya da telefon gibi her ağ için ayrı profil kaydedebilirsin; o ağa bağlanınca profil kendiliğinden seçilir.	Save a profile for each network, like home, work or your phone; it's picked automatically when you join that network.
+Ağa göre profil değiştir	Switch profile by network
+Bu ağ: %s	This network: %s
+Kayıtlı profil: %s	Saved profile: %s
+Bu ağ için kayıtlı profil yok	No profile saved for this network
+Bu profili hatırla	Remember this profile
+Profil: %s	Profile: %s
+Unut	Forget
+Panodan ekle	Paste from clipboard
+Kopyala	Copy
+Profili sil	Delete profile
+Sunucu	Server
+Site adreslerini çözen sunucu	The server that looks up site addresses
+Windows'un DNS ayarı değişir; koruma kapanınca eski haline döner	Changes Windows' DNS setting; restored when protection turns off
+DNS istekleri uygulama tarafından yönlendirilir; Windows ayarlarına dokunulmaz	DNS requests are redirected by the app; Windows settings are untouched
+Şifreli DNS (DoH)	Encrypted DNS (DoH)
+İnternet sağlayıcın hangi sitelere girdiğini DNS'ten göremez (Windows 11)	Your ISP can't see which sites you visit from DNS (Windows 11)
+Yalnızca \"Windows ayarı\" yönteminde	Only with the \"Windows setting\" method
+Özel sunucu	Custom server
+IPv4 adresleri	IPv4 addresses
+Virgülle ayrılmış	Comma separated
+IPv6 adresleri	IPv6 addresses
+İsteğe bağlı	Optional
+İnternet sağlayıcılar DNS isteklerine müdahale edebilir. \"Uygulama üzerinden\" yönteminde Yandex, Quad9, AdGuard ya da OpenDNS seç; \"Windows ayarı\" yönteminde şifreli DNS'i açık tut.	ISPs can tamper with DNS. With \"Through the app\" pick Yandex, Quad9, AdGuard or OpenDNS; with \"Windows setting\" keep encrypted DNS on.
+%d liste	%d lists
+Engeli aşılacak sitelerin listesi; her satıra bir site	A list of sites to unblock, one per line
+Yeni liste	New list
+Liste	List
+Listeyi bir internet adresinden güncel tutmak için; boş bırakırsan kendin düzenlersin	To keep the list updated from a web address; leave empty to edit it yourself
+Güncelleniyor…	Updating…
+Günde bir güncellenir · son: %lld dk önce	Updated daily · last: %lld min ago
+Günde bir güncellenir · son: %lld sa önce	Updated daily · last: %lld h ago
+Günde bir güncellenir · son: %lld gün önce	Updated daily · last: %lld days ago
+Henüz indirilmedi	Not downloaded yet
+Güncelleme adresi	Update URL
+Şimdi güncelle	Update now
+Klasörü aç	Open folder
+%d site. Alt adresler de kapsanır; değişiklikler kendiliğinden kaydedilir.	%d sites. Subdomains are included; changes save automatically.
+Siteler	Sites
+Listeyi sil	Delete list
+Sistem	System
+Açık	On
+Açık tema	Light
+Koyu tema	Dark
+Sürüm %s	Version %s
+Açılınca korumayı aç	Turn protection on at launch
+Uygulama başlayınca koruma hemen açılır	Protection turns on as soon as the app starts
+Davranış	Behavior
+Bildirimler	Notifications
+Hatalar her zaman bildirilir	Errors are always shown
+Kısayol tuşu	Hotkey
+Ctrl+Alt+G ile korumayı her yerden aç/kapat	Toggle protection from anywhere with Ctrl+Alt+G
+Görünüm	Appearance
+Tema	Theme
+Test sitesi	Test site
+Sende engelli olan bir site yaz, ör. discord.com; boş bırakırsan listedeki ilk site kullanılır	Enter a site that's blocked for you, e.g. discord.com; if empty, the first site in the list is used
+Güncellemeler	Updates
+Güncellemeleri denetle	Check for updates
+Günde bir kez yeni sürüm var mı diye bakılır	Checks for a new version once a day
+Denetleniyor…	Checking…
+Denetlenemedi (sunucuya ulaşılamadı)	Check failed (server unreachable)
+Şimdi denetle	Check now
+Kaldır	Remove
+Hakkında	About
+İnternet engellerini VPN'siz aşar · Açık kaynak (Apache-2.0) · GoodbyeDPI ve zapret tabanlı	Gets around internet blocks without a VPN · Open source (Apache-2.0) · based on GoodbyeDPI and zapret
+Tüm uygulamalar	All apps
+Yalnızca listedekiler	Only listed apps
+Listedekiler hariç	All except listed
+Koruma tüm uygulamaların bağlantılarına uygulanıyor	Protection applies to connections of all apps
+Yalnızca %d uygulamaya uygulanıyor	Applies only to %d apps
+%d uygulama dışında tümüne uygulanıyor	Applies to all apps except %d
+Kapsam	Scope
+Koruma hangi programların bağlantılarına uygulansın	Which programs' connections protection applies to
+Programlar adlarına göre tanınır. Değişiklikler hemen uygulanır.	Programs are matched by name. Changes apply immediately.
+Henüz program yok	No programs yet
+Çalışan bir programı seç ya da .exe dosyasını ekle	Pick a running program or add an .exe file
+Çalışanlardan ekle	Add running program
+Dosyadan ekle	Add from file
+Liste boşken kapsam ayarı uygulanmaz; koruma tüm uygulamalara uygulanır.	With an empty list the scope is ignored; protection applies to all apps.
+Bir sorun olursa nedenini buradaki kayıtlar gösterir	If something goes wrong, these records show why
+Temizle	Clear
+Hata	Error
+Başlıyor	Starting
+Kapalı	Off
+Durdur	Stop
+En uygun profil aranıyor: %d/%d, %s	Searching for the best profile: %d/%d, %s
+Engeller \"%s\" profiliyle aşılıyor.	Blocks are bypassed with the \"%s\" profile.
+Koruma kapalı; engelli siteler açılmayabilir.	Protection is off; blocked sites may not open.
+Çalışma süresi	Uptime
+Bağlantı	Connection
+Varsayılan	Default
+uygulama üzerinden	through the app
+%02d:%02d'de başladı	started at %02d:%02d
+çalışmıyor	not running
+Ölçülüyor	Measuring
+Çalışıyor · %s	Running · %s
+Motor hata verdi	The engine reported an error
+Durduruldu	Stopped
+Önce bir test sitesi seç	Choose a test site first
+Profilleri karşılaştırmak için sende engelli olan bir site gerekir. Genel sayfasındaki \"Test sitesi\" alanına yaz ya da profile bir site listesi ekle.	Comparing profiles needs a site that's blocked for you. Enter it in \"Test site\" on the General page, or add a site list to the profile.
+\"%s\" silinsin mi?	Delete \"%s\"?
+Profil kalıcı olarak silinir.	The profile is deleted permanently.
+Dosya kalıcı olarak silinir ve onu kullanan profillerden çıkarılır.	The file is deleted permanently and removed from profiles using it.
+Eski GoodbyeDPI hizmeti kaldırılsın mı?	Remove the old GoodbyeDPI service?
+Eski kurulumdan kalan GoodbyeDPI ve WinDivert hizmetleri durdurulup silinir.	The GoodbyeDPI and WinDivert services left by an old install are stopped and removed.
+Hizmetleri kaldır	Remove services
+Pencereli program bulunamadı	No windowed programs found
+%d profil eklendi.	%d profiles added.
+Dosyada profil bulunamadı.	No profiles found in the file.
+İçe aktarma	Import
+Panoda profil yok	No profile on the clipboard
+\"Bu profili kopyala\" ile kopyalanmış bir profil metni yapıştırılabilir.	You can paste profile text copied with \"Copy this profile\".
+Profil aranıyor %d/%d · %s	Searching profiles %d/%d · %s
+%s · %lu ms · %s	%s · %lu ms · %s
+%s test ediliyor…	Testing %s…
+Bağlantıyı test et	Test connection
+Ayarlar	Settings
+Çıkış	Quit
+Başlatılıyor	Starting
+DNS: varsayılan	DNS: default
+DNS: %s (%s)	DNS: %s (%s)
+DNS ayarlanamadı	Could not set DNS
+Koruma başlatılamadı	Could not start protection
+Çıkış kodu %lu.\n%s	Exit code %lu.\n%s
+Motor kapandı, yeniden başlatılıyor	The engine stopped, restarting
+Motor kapandı	The engine stopped
+\"%s\" seçildi: %s %lu ms'de yanıt verdi.	\"%s\" selected: %s answered in %lu ms.
+En uygun profil bulundu	Best profile found
+İptal edildi; \"%s\" profiline dönüldü.	Cancelled; back to the \"%s\" profile.
+Hiçbir profille %s'e ulaşılamadı; \"%s\" profiline dönüldü.	No profile could reach %s; back to the \"%s\" profile.
+Çalışan profil bulunamadı	No working profile found
+%s ağına bağlanıldı; \"%s\" profili kullanılıyor.	Joined %s; using the \"%s\" profile.
+Otomatik başlatma	Autostart
+Windows açılışı ayarı değiştirilemedi.	Couldn't change the start-with-Windows setting.
+%s: %s. \"En uygun profili bul\" ile başka bir profil dene.	%s: %s. Try another profile with \"Find the best profile\".
+Ağ değişti, bağlantı testi başarısız	Network changed, connection test failed
+Liste güncellenemedi	List update failed
+Bazı listeler indirilemedi; ayrıntılar Günlük sayfasında.	Some lists couldn't be downloaded; see the Log page.
+Yeni sürüm	New release
+Koruma açıldı (Ctrl+Alt+G)	Protection on (Ctrl+Alt+G)
+Koruma kapatıldı (Ctrl+Alt+G)	Protection off (Ctrl+Alt+G)
+TunnelDPI'ın çalışması için yönetici izni gerekiyor.	TunnelDPI needs administrator permission to work.
+Eski GoodbyeDPI hizmeti bulundu	Old GoodbyeDPI service found
+İkisi aynı anda çalışırsa çakışır. Kaldırılsın mı?\n\"Hayır\" dersen bir daha sorulmaz.	Running both at once causes conflicts. Remove it?\nIf you answer \"No\" you won't be asked again.
+Windows açılışında otomatik başlatılsın mı?	Start automatically with Windows?
+TunnelDPI bilgisayarı açınca saatin yanında sessizce başlar. Bunu sonra ayarlardan değiştirebilirsin.	TunnelDPI starts quietly next to the clock when you sign in. You can change this later in settings.
+Saatin yanındaki simgede çalışıyor. Tıkla: ayarlar, sağ tıkla: hızlı menü.	Running from the icon next to the clock. Click: settings, right-click: quick menu.
+Erişim var: %s %lu ms'de yanıt verdi	Reachable: %s answered in %lu ms
+DNS yanıtları farklı (normal olabilir); sorun yaşarsan DNS'i değiştir.	DNS answers differ (may be normal); change DNS if you have problems.
+Bu site için ek bir ayar gerekmiyor.	No extra settings needed for this site.
+DNS engeli: site adresi bulunamıyor ya da yanlış yere yönleniyor	DNS block: the site's address can't be found or points somewhere else
+DNS sayfasından bir sunucu seç ve şifreli DNS'i aç.	Pick a server on the DNS page and turn on encrypted DNS.
+Olası DNS engeli: internet sağlayıcının DNS'i farklı adres veriyor	Possible DNS block: your ISP's DNS returns a different address
+Önce DNS'i değiştirmeyi dene; düzelmezse \"En uygun profili bul\"u kullan.	Try changing DNS first; if that doesn't help, use \"Find the best profile\".
+Engel aşılamıyor: bağlantı kesiliyor	Block not bypassed: the connection gets cut
+Durum sayfasından \"En uygun profili bul\" ya da \"Derin tarama\"yı dene.	Try \"Find the best profile\" or \"Deep scan\" on the Status page.
+Erişim engeli: bağlantı kesiliyor	Access block: the connection gets cut
+Korumayı aç.	Turn protection on.
+test ediliyor	testing
+henüz test edilmedi	not tested yet
+az önce	just now
+%lu sn önce	%lu s ago
+%lu dk önce	%lu min ago
+%lu sa önce	%lu h ago
+Zaman aşımı	Timed out
+Alan adı çözülemedi	Domain not resolved
+Bağlanılamadı	Could not connect
+Bağlantı sıfırlandı	Connection reset
+TLS hatası	TLS error
+Ulaşılamadı	Unreachable
+Özel	Custom
+Bu Windows sürümü DNS değiştirmeyi desteklemiyor; \"Uygulama üzerinden\" yöntemini kullan.	This Windows version can't change DNS this way; use the \"Through the app\" method.
+DNS sunucusu tanımlı değil.	No DNS server defined.
+Ağ bağlantıları okunamadı (%lu).	Couldn't read network connections (%lu).
+Dil	Language
+Arayüz dili; değişiklik hemen uygulanır	Interface language; applies immediately
+Otomatik	Automatic
+Bu site ECH destekliyor: tarayıcında Güvenli DNS'i açarsan site adı gizlenir ve engel çoğu zaman kendiliğinden kalkar.	This site supports ECH: turn on Secure DNS in your browser and the site name is hidden, which often lifts the block by itself.
+Duraklatıldı · %d dk sonra açılır	Paused · resumes in %d min
+30 dakika duraklat	Pause for 30 minutes
+Duraklatmayı bitir	Resume now
+%s bulunamadı:\n%s\nTunnelDPI'ı yeniden kurmak bunu düzeltir.	%s not found:\n%s\nReinstalling TunnelDPI fixes this.
+%s başlatılamadı (hata %lu). Antivirüs engelliyor olabilir.	%s could not be started (error %lu). An antivirus may be blocking it.
+Koruma %d dakika sonra kendiliğinden açılacak.	Protection will turn back on in %d minutes.
+Koruma duraklatıldı	Protection paused
+Bulunan: %s	Found: %s
+Bulunan %d: %s	Found %d: %s
+Motor	Engine
+Gelişmiş: daha çok yöntem; Discord sesi ve zorlu engellerde güçlü	Advanced: more methods; strong for Discord voice and tough blocks
+Klasik: hafif ve hızlı, çoğu engel için yeterli	Classic: light and fast, enough for most blocks
+Gelişmiş motorun dosyaları eksik. TunnelDPI'ı yeniden kurmayı dene.	The advanced engine's files are missing. Try reinstalling TunnelDPI.
+Motor komutu	Engine command
+Uzmanlar için. %HOSTLIST% seçili site listeleriyle değişir; liste yoksa tüm sitelere uygulanır. Uygulamalar sayfası ve \"Uygulama üzerinden\" DNS bu motorda çalışmaz.	For experts. %HOSTLIST% is replaced with the selected site lists; with no list it applies to all sites. The Apps page and \"Through the app\" DNS don't work with this engine.
+Ses ve oyunlar	Voice and games
+Sesli sohbet ve oyun bağlantıları için ek koruma.	Extra protection for voice chat and game connections.
+Discord sesli sohbet	Discord voice chat
+Discord'da sesli kanala bağlanamıyorsan aç	Turn on if you can't join Discord voice channels
+Oyunlar ve diğer sesli uygulamalar	Games and other voice apps
+Daha geniş kapsamlı; Discord sesini de içerir	Broader; includes Discord voice
+Sahte paket: MD5 imzası	Fake packet: MD5 signature
+--md5sig · Sunucunun düşürdüğü TCP MD5 seçenekli sahte paketler de gönderilir	--md5sig · Also sends fakes with a TCP MD5 option, which servers drop
+Engelli siteleri kendisi öğrensin	Learn blocked sites automatically
+--autolist · Bağlantısı kesilen siteler lists\\otomatik.txt'ye eklenir	--autolist · Sites whose connections get cut are added to lists\\otomatik.txt
+Bölme noktaları	Split positions
+--split-pos · Virgülle: 1, sni, sni+3, midsni, -10	--split-pos · Comma separated: 1, sni, sni+3, midsni, -10
+Sıra örtüşmesi (bayt)	Sequence overlap (bytes)
+--seqovl · İlk parçanın önüne DPI'ı şaşırtan çöp veri eklenir	--seqovl · Prepends junk to the first segment to confuse DPI
+UDP sahte paket sayısı	UDP fake packet count
+--udp-fake · Yeni UDP akışlarından önce gönderilir	--udp-fake · Sent before new UDP flows
+UDP portları	UDP ports
+--udp-ports · Ör. 50000-65535, 3478	--udp-ports · E.g. 50000-65535, 3478
+TunnelDPI kaldırılsın mı?	Uninstall TunnelDPI?
+Koruma kapanır ve DNS ayarların eski haline döner. Ayarlar ve listeler silinir.	Protection turns off and your DNS settings are restored. Settings and lists are deleted.
+TunnelDPI kaldırıldı	TunnelDPI has been uninstalled
+Güncelleme indirilemedi	Update could not be downloaded
+Sürüm sayfasından elle indirebilirsin.	You can download it from the release page.
+%s %s yayınlandı. Ayarlar → Genel → Güncellemeler.	%s %s is out. Settings → General → Updates.
+Güncelleme kaynağı ayarlanmadı	No update source set
+Yeni sürüm indiriliyor…	Downloading the new version…
+Yeni sürüm: %s · yüklü: %s	New version: %s · installed: %s
+Güncel · %s	Up to date · %s
+Yüklü: %s · henüz denetlenmedi	Installed: %s · not checked yet
+Güncelle	Update
+Reklamları engelle	Block ads
+Listelere ek olarak, açılmayan siteleri kendisi bulup listeye ekler	Besides the lists, finds sites that won't open and adds them
+Açılmayan siteleri kendisi bulur; koruma yalnızca onlara uygulanır	Finds sites that won't open; protection applies only to them
+%d site öğrenildi	%d sites learned
+Henüz yok. Engelli bir site ilk denemede öğrenilir; sayfayı yenileyince açılır.	None yet. A blocked site is learned on the first try; reload the page and it opens.
+Öğrenilen siteler	Learned sites
+Göster	Show
+Açık · listeler hazırlanıyor	On · preparing lists
+Bu oturumda %ld alan adı engellendi · son: %s	%ld domains blocked this session · last: %s
+Açık · henüz bir şey engellenmedi	On · nothing blocked yet
+Engelleme	Blocking
+Reklam ve izleyicileri engelle	Block ads and trackers
+Reklam ve takip sitelerine bağlantı kesilir; tüm programlarda geçerli	Blocks connections to ad and tracking sites, in every program
+Seçili profil gelişmiş motoru kullanıyor; reklam engelleme yalnızca klasik motorla çalışır.	The selected profile uses the advanced engine; ad blocking only works with the classic engine.
+Listeler	Lists
+Seçtiğin listeler indirilir ve günde bir güncellenir. Çoğu kişi için ilki yeterli; büyük listeler daha çok bellek kullanır. Engelleme açıkken tarayıcılar HTTP/3 yerine normal HTTPS kullanır.	Selected lists are downloaded and updated daily. The first one is enough for most people; bigger lists use more memory. While blocking is on, browsers use regular HTTPS instead of HTTP/3.
+indiriliyor…	downloading…
+indirilemedi	download failed
+%s · %d adres	%s · %d addresses
+Kendi listen	Your list
+Engellemek istediğin siteler, her satıra bir tane. Alt adresler de engellenir.	Sites you want to block, one per line. Subdomains are blocked too.
+İzin verilenler	Allowed
+Bunlar hiçbir zaman engellenmez. Bir site düzgün çalışmazsa buraya ekle.	These are never blocked. If a site stops working properly, add it here.
+Reklam ve izleyiciler	Ads and trackers
+Önerilen · dengeli, siteleri bozmaz (HaGeZi Light)	Recommended · balanced, doesn't break sites (HaGeZi Light)
+Reklam ve izleyiciler (geniş)	Ads and trackers (broad)
+Daha çok reklam yakalar, daha çok bellek kullanır (HaGeZi Pro)	Catches more ads, uses more memory (HaGeZi Pro)
+AdGuard DNS filtresi	AdGuard DNS filter
+AdGuard'ın DNS düzeyindeki reklam ve izleyici listesi	AdGuard's DNS-level ad and tracker list
+Birçok kaynaktan birleştirilmiş klasik hosts listesi	Classic hosts list merged from many sources
+Zararlı siteler	Malicious sites
+Dolandırıcılık ve virüs yayan siteler (HaGeZi TIF)	Scam and malware sites (HaGeZi TIF)
+-9  -8 + HTTP/3 kapalı (en kapsamlı)	-9  -8 + HTTP/3 off (most thorough)
+Sorun giderme	Troubleshooting
+TunnelDPI ile çakışır; kaldırman önerilir	Conflicts with TunnelDPI; removing it is recommended
+Klasik	Classic
+Gelişmiş (zapret)	Advanced (zapret)
+Açmak için düğmeye bas	Press the button to turn on
+Bir site açılmıyor mu?	A site won't open?
+Yöntemleri tek tek dener, test sitesini açanı seçer	Tries methods one by one and picks the one that opens the test site
+Hızlı ara	Quick search
+Derin tara	Deep scan
+Yeni ad	New name
+Başka yere tıklayınca kaydedilir	Saved when you click elsewhere
+Diğer işlemler	More actions
+Sahte paket ömrü (TTL)	Fake packet lifetime (TTL)
+Türkiye'de genelde 5 ya da Otomatik iyi çalışır	In Turkey 5 or Automatic usually works well
+Hazır ayara göre	From the preset
+Bazı sitelerde engeli aşmayı kolaylaştırır	Makes it easier to get around blocks on some sites
+Port	Port
+Boş bırakırsan 53	53 if left empty
+Şifreli DNS adresi	Encrypted DNS URL
+ör. https://dns.example/dns-query	e.g. https://dns.example/dns-query
+Kendi sitelerin	Your own sites
+Engellenen ve izin verilen siteler	Blocked and allowed sites
+Listelere ek olarak engellemek ya da hiç engellememek istediğin siteler	Sites you want to block, or never block, on top of the lists
+Yeniden adlandır	Rename
+Panoya kopyala	Copy to clipboard
+Tüm profilleri dosyaya kaydet	Save all profiles to a file
+Dosyadan profil ekle	Add profiles from a file
+Bir site açılmıyor…	A site won't open…
+%s açılmıyor · %s açılıyor	%s not opening · %s opening
+%s açılmıyor	%s not opening
+%s açılıyor	%s opening
+%s artık açılıyor.	%s opens now.
+%s artık \"%s\" profiliyle açılıyor; diğer siteler \"%s\" ile devam ediyor.	%s now opens with the \"%s\" profile; other sites keep using \"%s\".
+%s \"%s\" profiliyle açılıyor; bu profile geçildi.	%s opens with the \"%s\" profile; switched to it.
+Site açıldı	Site opens
+Hiçbir profille %s açılamadı. Durum sayfasından \"Derin tara\"yı dene.	%s couldn't be opened with any profile. Try \"Deep scan\" on the Status page.
+Site açılamadı	Site couldn't be opened
+Tüm profiller…	All profiles…
+%s açılmıyor; çalışan bir profil aranıyor.	%s isn't opening; looking for a working profile.
+Koruma onarılıyor	Repairing protection
+%s yanıt vermiyordu; %s kullanılıyor.	%s wasn't responding; now using %s.
+DNS değiştirildi	DNS changed
+Zamanlamaya göre %02d:%02d'e kadar kapalı.	Off until %02d:%02d by schedule.
+Koruma kapatıldı	Protection turned off
+Koruma açıldı	Protection turned on
+Zamanlanmış kapalı süre bitti.	The scheduled off period is over.
+%s açıldı; koruma da açıldı.	%s started; protection turned on too.
+Program kapandı; koruma da kapatıldı.	The app closed; protection turned off too.
+%s açılıyor (%lu ms).	%s opens (%lu ms).
+Her profil engeli farklı bir yöntemle aşar. Hangisinin çalışacağı internet sağlayıcına bağlıdır. Emin değilsen aşağıdaki \"En uygun profili bul\"u kullan. Simgeye orta tıklayarak son kullandığın profiller arasında da geçebilirsin.	Each profile bypasses blocks in a different way. Which one works depends on your ISP. If you're not sure, use \"Find the best profile\" below. You can also middle-click the tray icon to switch between your recent profiles.
+DNS, site adlarını adreslere çeviren hizmettir. Bazı engeller DNS'ten yapılır; o zaman başka bir DNS sunucusu seçmek siteyi açar. Ayrıntılar DNS sayfasında.	DNS turns site names into addresses. Some blocks are made through DNS; then choosing another DNS server opens the site. Details on the DNS page.
+Henüz denetlenmedi	Not checked yet
+Koruma açıkken siteler 5 dakikada bir denetlenir	While protection is on, sites are checked every 5 minutes
+Koruma kapalı	Protection is off
+✓ Açılıyor · %lu ms	✓ Opens · %lu ms
+✗ Açılmıyor	✗ Not opening
+Son denetim: %s	Last check: %s
+Denetim	Check
+İzlenen siteler: Genel sayfasındaki test sitesi ve kullandığın listelerin ilk siteleri. Koruma açıkken 5 dakikada bir bağlanmayı dener; sonuç saatin yanındaki panelde de görünür.	Watched sites: the test site on the General page and the first site of each list you use. While protection is on, they're checked every 5 minutes; the result also shows in the panel next to the clock.
+Bozulunca kendisi onarsın	Repair itself when it breaks
+Siteler açılmaz olursa çalışan profili kendisi bulur ve geçer	If sites stop opening, it finds a working profile and switches to it
+İnternet sağlayıcılar engelleme yöntemlerini zaman zaman değiştirir. Bu açıkken izlenen sitelerin hiçbiri iki denetim üst üste açılmazsa (ve internetin çalışıyorsa) TunnelDPI profilleri tek tek dener, çalışana geçer ve sana bildirir. En fazla yarım saatte bir yapılır.	ISPs change their blocking methods from time to time. With this on, if none of the watched sites open in two checks in a row (while your internet works), TunnelDPI tries the profiles one by one, switches to the one that works and lets you know. At most once every half hour.
+Site adresi	Site address
+Deneniyor; sonucu bildirim olarak göreceksin	Trying; you'll see the result as a notification
+Açılmayan sitenin adresini yaz ya da tarayıcıdan yapıştır	Type the address of the site that won't open, or paste it from your browser
+Deneniyor…	Trying…
+Açılmasını sağla	Make it open
+\"Açılmasını sağla\" siteyi listene ekler ve dener. Açılmazsa profilleri tek tek dener; çalışan profil başkaysa yalnızca bu site için bir site kuralı oluşturur, diğer siteler bugünkü profille devam eder.\n\n\"İncele\" engelin nereden geldiğini söyler: site adı mı yanlış çözülüyor (DNS), yoksa bağlantı mı kesiliyor. Kutu boşsa test sitesi incelenir.	\"Make it open\" adds the site to your list and tries it. If it still doesn't open, it tries the profiles one by one; if a different profile works, it creates a site rule just for this site and other sites keep using today's profile.\n\n\"Inspect\" tells you where the block comes from: whether the site name is resolved wrongly (DNS) or the connection is cut. If the box is empty, the test site is inspected.
+Hızlı ara: kayıtlı profillerini sırayla dener ve test sitesini en hızlı açanı seçer, yarım dakika sürer.\n\nDerin tara: 20 kadar yöntem birleşimini dener, birkaç dakika sürer. Çalışan yöntemi yeni bir profil olarak kaydeder. Hızlı arama işe yaramazsa bunu dene.\n\nBulunan profil bağlı olduğun ağ için hatırlanır.	Quick search: tries your saved profiles in turn and picks the one that opens the test site fastest; takes about half a minute.\n\nDeep scan: tries about 20 method combinations; takes a few minutes. It saves the working method as a new profile. Try it if the quick search doesn't help.\n\nThe profile found is remembered for the network you're on.
+Seçtiğin profil hemen kullanılır; aşağıdaki ayarlar onundur	The profile you pick is used right away; the settings below belong to it
+Klasik motor az bellek kullanır ve çoğu engeli aşar; reklam engelleme, uygulama filtresi ve site kuralları yalnızca onunla çalışır.\n\nGelişmiş motor (zapret) daha çok yöntem dener; Discord sesi ya da klasik motorun aşamadığı engeller için.	The classic engine uses little memory and bypasses most blocks; ad blocking, the app filter and site rules only work with it.\n\nThe advanced engine (zapret) tries more methods; for Discord voice or blocks the classic engine can't bypass.
+GoodbyeDPI'ın -1 ile -9 arası hazır yöntemleri. -1 en uyumlu ama en zayıfı, -9 en kapsamlısı. Türkiye'de genelde -5 çalışır.	GoodbyeDPI's built-in methods -1 to -9. -1 is the most compatible but the weakest, -9 the most thorough. -5 usually works in Turkey.
+Engelleyiciyi şaşırtmak için sahte paketler gönderilir. Bu sayı, sahte paketin kaç ağ cihazından geçtikten sonra yok olacağını belirler: engelleyiciye ulaşmalı ama siteye ulaşmamalı. Siteler açılıyor ama bazıları bozuk geliyorsa sayıyı küçült; hiç açılmıyorsa büyüt.	Fake packets are sent to confuse the blocker. This number sets after how many network devices a fake packet disappears: it must reach the blocker but not the site. If sites open but some look broken, lower it; if nothing opens, raise it.
+HTTP/3 (QUIC) bağlantıları bu yöntemle değiştirilemez. Kapatınca tarayıcılar normal HTTPS'e döner ve engel aşılabilir. Hız farkı fark edilmez.	HTTP/3 (QUIC) connections can't be changed this way. Turning it off makes browsers fall back to regular HTTPS, where the block can be bypassed. You won't notice a speed difference.
+Bağlantısı engelleyici tarafından kesilen siteler \"otomatik.txt\" listesine kendiliğinden eklenir. Bir site ilk denemede öğrenilir; sayfayı yenileyince açılır. Liste kullanmıyorsan koruma yalnızca öğrenilen sitelere uygulanır, diğer siteler hiç değişmeden gider.	Sites whose connections are cut by the blocker are added to the \"otomatik.txt\" list automatically. A site is learned on the first try; it opens when you reload the page. If you don't use a list, protection only applies to learned sites and all other sites go through untouched.
+Ağlar modem adresiyle tanınır. Bir profil seçtiğinde o an bağlı olduğun ağ için hatırlanır; o ağa yeniden bağlanınca kendiliğinden seçilir.	Networks are recognized by your router's address. When you pick a profile, it's remembered for the network you're on; when you reconnect to that network, it's selected automatically.
+Uygulama üzerinden: DNS istekleri koruma açıkken seçtiğin sunucuya yönlendirilir; Windows ayarları değişmez. Sağlayıcılar 53. porta müdahale edebildiği için başka port kullanan Yandex, Quad9, AdGuard ya da OpenDNS'i seç.\n\nWindows ayarı: ağ bağdaştırıcının DNS'i değiştirilir, şifreli DNS kullanılabilir. Koruma kapanınca eski hale döner.	Through the app: while protection is on, DNS requests are redirected to the server you pick; Windows settings don't change. ISPs can interfere with port 53, so pick Yandex, Quad9, AdGuard or OpenDNS, which use other ports.\n\nWindows setting: your network adapter's DNS is changed and encrypted DNS can be used. It's restored when protection turns off.
+DNS istekleri şifreli gönderilir; sağlayıcın onları göremez ve değiştiremez. Windows 11 gerekir.	DNS requests are sent encrypted; your ISP can't see or change them. Requires Windows 11.
+Yanıt vermezse yedeğe geç	Switch to a backup if it stops responding
+Seçili sunucu çalışmazsa en hızlı çalışan sunucuya geçer	If the selected server stops working, switches to the fastest working one
+Koruma açıkken seçili DNS sunucusu 5 dakikada bir yoklanır. İki kez üst üste yanıt vermezse tüm sunucular ölçülür, en hızlı çalışana geçilir ve sana bildirilir.	While protection is on, the selected DNS server is checked every 5 minutes. If it doesn't respond twice in a row, all servers are measured, the fastest working one is used and you're notified.
+Hız	Speed
+En hızlı sunucuyu bul	Find the fastest server
+Ölçülüyor…	Measuring…
+Her sunucunun yanıt süresini ölçer	Measures each server's response time
+Ölç	Measure
+Her sunucuya üç kez sorgu gönderilir ve en iyi süre gösterilir. Düşük süre sitelerin daha hızlı açılmaya başlaması demektir; 10-20 ms farkı hissedilmez.	Each server is queried three times and the best time is shown. A lower time means sites start loading sooner; a 10-20 ms difference isn't noticeable.
+ölçülüyor…	measuring…
+yanıt vermedi	no response
+%d ms · en hızlı	%d ms · fastest
+%d ms	%d ms
+Kullan	Use
+Bu sitelerde kullanılacak profil	Profile for these sites
+Etkin profil gelişmiş motorlu; kural şu an uygulanmıyor	The active profile uses the advanced engine; the rule isn't applied right now
+Bu listedeki siteler başka bir yöntem istiyorsa seç	Pick one if the sites in this list need a different method
+Etkin profil	Active profile
+Site kuralı: bu listedeki siteler seçtiğin profille, diğer tüm siteler etkin profille açılır. Örneğin Discord bir yöntemle, başka bir site başka bir yöntemle açılıyorsa ikisini birlikte kullanabilirsin.\n\nYalnızca klasik motorlu profillerde çalışır. Durum sayfasındaki \"Açılmasını sağla\" kuralları kendisi de oluşturur.	Site rule: sites in this list open with the profile you pick, all other sites with the active profile. For example, if Discord opens with one method and another site with a different one, you can use both together.\n\nOnly works with classic-engine profiles. \"Make it open\" on the Status page also creates rules by itself.
+Otomatik aç/kapat	Automatic on/off
+Program açılınca korumayı aç	Turn protection on when an app starts
+Program kapanınca koruma da kapanır	Protection turns off again when the app closes
+Koruma yalnızca ihtiyaç olduğunda açık kalsın istiyorsan. Listedeki programlardan biri açılınca koruma açılır, hepsi kapanınca kapanır. Korumayı elle açıp kapatırsan senin kararın geçerli olur.	For keeping protection on only when you need it. When one of the listed apps starts, protection turns on; when they all close, it turns off. If you turn protection on or off yourself, your choice wins.
+Programlar	Apps
+Virgülle ayır, ör. Discord, oyun.exe	Separate with commas, e.g. Discord, game.exe
+Belirli saatlerde kapat	Turn off at certain hours
+Seçtiğin saatler arasında koruma kapalı kalır	Protection stays off between the hours you pick
+Örneğin gece saatlerinde korumayı kapatmak için. Aralık başlayınca koruma kapanır, bitince yeniden açılır. Aralığın içinde elle açarsan açık kalır.	For example, to turn protection off at night. When the period starts protection turns off, and it turns back on when it ends. If you turn it on yourself during the period, it stays on.
+Başlangıç	Start
+Bitiş	End
+Günler	Days
+Bağlantı testi, profil bulucu ve site denetimi bu siteyi kullanır. Engelsiz bir site (ör. google.com) yazarsan her profil çalışıyor görünür; mutlaka sende açılmayan bir site seç.	The connection test, profile finder and site check use this site. If you enter an unblocked site (e.g. google.com), every profile looks like it works; be sure to pick a site that doesn't open for you.
+Seçtiğin listelerdeki reklam ve takip adreslerine bağlantı daha başlamadan kesilir. Tarayıcı eklentisi gerekmez, tüm programlarda çalışır. Bir site bozulursa \"İzin verilenler\"e ekle.	Connections to ad and tracking addresses in the lists you pick are cut before they start. No browser extension needed; works in every app. If a site breaks, add it to \"Allowed\".
+Yalnızca listedekiler: koruma sadece seçtiğin programlara (ör. Discord) uygulanır, diğerleri hiç etkilenmez.\n\nListedekiler hariç: seçtiğin programlar (ör. bir oyun ya da banka uygulaması) korumanın dışında kalır.\n\nYalnızca klasik motorda çalışır.	Only listed apps: protection applies only to the apps you pick (e.g. Discord); others aren't affected at all.\n\nExcept listed apps: the apps you pick (e.g. a game or a banking app) are left out of protection.\n\nOnly works with the classic engine.
+Bu bir site adresine benzemiyor	That doesn't look like a site address
+Örneğin discord.com ya da https://www.ornek.com/sayfa yaz.	For example, type discord.com or https://www.example.com/page.
+Başka bir deneme sürüyor	Another attempt is in progress
+Bitmesini bekle ya da Durum sayfasından durdur.	Wait for it to finish or stop it on the Status page.
+Her gün	Every day
+Hafta içi	Weekdays
+Hafta sonu	Weekends
+Program tetikleyicisi açıkken koruma o programla açılır	With the app trigger on, protection starts with that app
+%s bağlantılarına dokunulmuyor; diğer programlar korunmaya devam ediyor.	%s's connections are left alone; other apps stay protected.
+Oyun modu	Game mode
+Tarayıcılar	Browsers
+Güvenli DNS açık (%s): site adlarını kendisi çözer	Secure DNS on (%s): resolves site names itself
+Güvenli DNS açık: site adlarını kendisi çözer	Secure DNS on: resolves site names itself
+Güvenli DNS otomatik: buradaki DNS ayarı kullanılır	Secure DNS automatic: uses the DNS setting here
+Güvenli DNS kapalı: buradaki DNS ayarı kullanılır	Secure DNS off: uses the DNS setting here
+Tarayıcıların çoğunda \"Güvenli DNS\" (DNS over HTTPS) ayarı vardır. Açıkken tarayıcı site adlarını kendi seçtiği sunucuya şifreli sorar: DNS engelleri o tarayıcıda zaten aşılır, ama burada seçtiğin DNS o tarayıcıda kullanılmaz. Diğer programlar (Discord, oyunlar) yine buradaki ayarı kullanır.\n\nDNS engeli yaşıyorsan tarayıcının ayarlarında Gizlilik ve güvenlik → Güvenli DNS'i açmak da işe yarar; ECH destekleyen sitelerde engel tamamen kalkabilir.	Most browsers have a \"Secure DNS\" (DNS over HTTPS) setting. When it's on, the browser asks its own server for site names over an encrypted connection: DNS blocks are already bypassed in that browser, but the DNS you pick here isn't used there. Other apps (Discord, games) still use the setting here.\n\nIf you have DNS blocks, turning on Secure DNS under Privacy and security in your browser also helps; on sites that support ECH the block may go away completely.
+Güvenli DNS'i açık olan tarayıcılar buradaki DNS sunucusunu kullanmaz. Bu sorun değildir; yalnızca DNS değişikliğinin o tarayıcıda etkisi olmaz.	Browsers with Secure DNS on don't use the DNS server picked here. That's not a problem; changing DNS just has no effect in those browsers.
+Yedekleme	Backup
+Ayarlar ve listeler	Settings and lists
+Profiller, listeler, kurallar ve ayarlar tek dosyada	Profiles, lists, rules and settings in one file
+Yedekle	Back up
+Geri yükle	Restore
+Yedek dosyası tüm profillerini, site listelerini, site kurallarını, uygulama listesini, kendi engel ve izin listelerini ve ayarlarını içerir. Başka bir bilgisayara taşımak ya da yeniden kurulumdan sonra geri almak için. İndirilen reklam listeleri yedeğe girmez, kendiliğinden yeniden indirilir.	The backup file contains all your profiles, site lists, site rules, app list, your own block and allow lists, and your settings. For moving to another computer or restoring after a reinstall. Downloaded ad lists aren't included; they're downloaded again automatically.
+TunnelDPI'ı kapat	Quit TunnelDPI
+Koruma kapanır ve simge saatin yanından kalkar	Protection turns off and the icon leaves the tray
+Kapat	Quit
+Oyunlar	Games
+Tam ekran oyunun bağlantılarına dokunulmaz; Discord ve diğerleri korunur	A full-screen game's connections are left alone; Discord and others stay protected
+Tam ekran bir oyun açılınca o oyun korumanın dışında bırakılır; oyunun bağlantısı hiç değiştirilmeden gider, ping etkilenmez. Discord sesi ve diğer programlar korunmaya devam eder. Oyun kapanınca ya da bir dakika arka planda kalınca koruma yeniden her şeye uygulanır.\n\nTarayıcılar oyun sayılmaz (tam ekran video izlerken koruma kalkmaz). Yalnızca klasik motorda çalışır.	When a full-screen game starts, that game is left out of protection; its connections go through unchanged and ping isn't affected. Discord voice and other apps stay protected. When the game closes or stays in the background for a minute, protection applies to everything again.\n\nBrowsers don't count as games (protection stays on while watching full-screen video). Only works with the classic engine.
+%d dosya yedeklendi.	%d files backed up.
+Yedek dosyası yazılamadı.	Couldn't write the backup file.
+Yedek geri yüklensin mi?	Restore the backup?
+Şu anki ayarların, profillerin ve listelerin yedektekilerle değiştirilir. Yedekte olmayan listeler silinmez.	Your current settings, profiles and lists will be replaced with the ones in the backup. Lists that aren't in the backup aren't deleted.
+Bu bir TunnelDPI yedeği değil	This isn't a TunnelDPI backup
+Ayarlar penceresindeki \"Yedekle\" ile oluşturulan dosyayı seç.	Pick a file created with \"Back up\" in the settings window.
+%d dosya geri yüklendi.	%d files restored.
+Geri yükleme	Restore
+Güncelleme doğrulanamadı	Update could not be verified
+İndirilen dosyanın imzası tutmadı; güvenliğin için kurulmadı.	The downloaded file's signature didn't match; it wasn't installed, for your safety.
+Sağlayıcının DNS'i engelli siteleri yanlış adrese çevirebilir; yukarıdan bir sunucu seç.	Your ISP's DNS may send blocked sites to the wrong address; pick a server above.
+Şifresiz DNS'e sağlayıcın müdahale edebilir; şifreli DNS'i aç.	Your ISP can tamper with unencrypted DNS; turn on encrypted DNS.
+Engeli aşılacak siteleri bir listeye yaz; her satıra bir site	Write the sites to unblock in a list, one site per line
+Yeni sürüm: %s · imzasız, sürüm sayfasından indir	New version: %s · unsigned, download from the release page
+Güncellemeler GitHub'daki sürümlerden indirilir. Her sürüm yayıncının gizli anahtarıyla imzalanır; imza ya da dosya özeti tutmazsa güncelleme kurulmaz. Böylece sürüm sayfası ele geçirilse bile sahte bir dosya bilgisayarına kurulamaz.	Updates are downloaded from the releases on GitHub. Each release is signed with the publisher's private key; if the signature or file hash doesn't match, the update isn't installed. So even if the release page were hijacked, a fake file couldn't be installed on your computer.
+ör. discord.com	e.g. discord.com
+Ayrıntıları aç →	Open details →
+Durum sayfasını aç →	Open status page →
+Şüpheli bağlantıları kaydet	Record suspicious connections
+Deneysel: adayları kaydeder; engelli olduklarını varsaymaz ve otomatik uygulamaz	Experimental: records candidates; doesn't assume they're blocked and never applies them
+Bağlantının kesilmesi DPI engeli olduğunu kanıtlamaz. Tekrar gönderilen paketler engel sayılmaz; yanıt veren sunucular aday yapılmaz. Adaylar ayrı tutulur ve korumaya eklenmez. Onaylı listeye yalnızca engelli bir ağda kendin doğruladığın siteleri yaz. Eski otomatik keşif listesi korunur, ancak bu özellik tarafından artık kullanılmaz.	A dropped connection doesn't prove a DPI block. Retransmitted packets aren't counted as blocks, and servers that respond don't become candidates. Candidates are kept separately and never added to protection. Only put sites you verified yourself on a blocked network into the approved list. The old auto-discovery list is kept but no longer used by this feature.
+%d site elle onaylandı	%d sites approved by hand
+Onaylı liste boş; adaylar otomatik eklenmez	The approved list is empty; candidates aren't added automatically
+Elle onaylanan siteler	Sites approved by hand
+Düzenle	Edit
+Doğrulanmamış adaylar	Unverified candidates
+Bu liste erişim engeli kanıtı değildir	This list is not proof of a block
+Eski liste	Old list
